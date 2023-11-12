@@ -1,0 +1,980 @@
+.menu {
+	position: fixed;
+	margin-top: 0vw;
+	width: 0;
+	overflow: hidden;
+	background: #260b66;
+	box-shadow: 0 0 10px rgb(0, 0, 0), 0, .3;
+	transition: width 0.5s ease-in-out;
+	border-radius: 15px;
+	height: 5vw;
+	font-size: 0;
+	opacity: 90%;
+	z-index: 10;
+	left: 16%; 
+	top: 5%; 
+}
+
+.menu.active {
+	opacity: 90%;
+	width: 70vw;
+	font-size: 1.3vw;
+	color: #fff;
+}
+
+.menu::after {
+	content: "";
+	position: absolute; /* Asegura que la posición sea absoluta */
+	bottom: -0.5vw;
+	right: 7%;
+	transform: translateX(10%);
+	width: 10vw;
+	height: 90%;
+	margin-top: 4vw;
+}
+
+  
+  .menu a {
+	opacity: 230%;
+	display: block;
+	padding: 1.5vw 5vw;
+	color: #f0f0f0;
+	text-decoration: none;
+	border-right: 0.1vw transparent #974747;
+   transition: all 0.3s ease
+  }
+  
+  .menu a:last-child {
+	border-right: none;
+  }
+  
+  .menu a:hover {
+	background: #ebddddfd;
+	opacity: 50%;
+	color: #ffffff;
+	height: 5vw;
+	border-radius: 1vw;
+	transition: all 0.5s ease-in-out;
+	
+	
+  }
+  
+  .menu.active a:hover {
+	color: #260b66;
+	opacity: 70%;
+
+  }
+  
+  .menu.active a {
+	color: #ffffff;
+	opacity: 300%;
+  }
+  
+  .menu ul {
+	opacity: 230%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	height: 5vw;
+  }
+  
+  .menu li {
+	margin: 0;
+	margin-bottom: 2px;
+  }
+  
+
+  .menu-btn {
+	position: fixed;
+	z-index: 3;
+	font-size: 2vw;
+	color: #260b66;
+	background-color: #0000001f;;
+	border: none;
+	cursor: pointer;
+	height: 4vw;
+	width: 4vw;
+	margin-top: 2.5vw;
+	margin-left: 10%;
+	border-radius: 1vw;
+	padding: 0.5vw;
+
+  }
+  
+  
+  .menu-btn .line {
+	width: 100%;
+	height: 0.4vw;
+	background-color: #260b66;
+	margin-bottom: 0.3vw;
+	margin-top: 0.4vw;
+	transition: all 0.3s ease;
+  }
+  
+  .menu-btn:hover .line:nth-child(1),
+  .menu-btn:hover .line:nth-child(3) {
+	width: 100%;
+  }
+  
+  .menu-btn .line:nth-child(1),
+  .menu-btn .line:nth-child(3) {
+	width: 50%;
+  }
+  
+  .menu-btn:hover .line:nth-child(2) {
+	width: 50%;
+  }
+  
+  /* Cambiar botón a x */
+  .menu-btn.active .line:nth-child(1) {
+	transform: rotate(45deg);
+	width: 100%;
+	margin-bottom: -0.9vw;
+	margin-top: 1.5vw;
+  }
+  
+  .menu-btn.active .line:nth-child(2) {
+	transform: rotate(-45deg);
+	width: 100%;
+	margin-top: 0.5vw;
+  }
+  
+  .menu-btn.active .line:nth-child(3) {
+	opacity: 0;
+  }
+  /*Text input*/
+
+.menu {
+	position: fixed;
+	margin-top: 0vw;
+	width: 0;
+	overflow: hidden;
+	background: #260b66;
+	box-shadow: 0 0 10px rgb(0, 0, 0), 0, .3;
+	transition: width 0.5s ease-in-out;
+	border-radius: 15px;
+	height: 5vw;
+	font-size: 0;
+	opacity: 90%;
+	z-index: 10;
+	left: 16%; 
+	top: 5%; 
+}
+
+.menu.active {
+	opacity: 90%;
+	width: 70vw;
+	font-size: 1.3vw;
+	color: #fff;
+}
+
+.menu::after {
+	content: "";
+	position: absolute; /* Asegura que la posición sea absoluta */
+	bottom: -0.5vw;
+	right: 7%;
+	transform: translateX(10%);
+	width: 10vw;
+	height: 90%;
+	margin-top: 4vw;
+}
+
+  
+  .menu a {
+	opacity: 230%;
+	display: block;
+	padding: 1.5vw 5vw;
+	color: #f0f0f0;
+	text-decoration: none;
+	border-right: 0.1vw transparent #974747;
+   transition: all 0.3s ease
+  }
+  
+  .menu a:last-child {
+	border-right: none;
+  }
+  
+  .menu a:hover {
+	background: #ebddddfd;
+	opacity: 50%;
+	color: #ffffff;
+	height: 5vw;
+	border-radius: 1vw;
+	transition: all 0.5s ease-in-out;
+	
+	
+  }
+  
+  .menu.active a:hover {
+	color: #511389;
+	opacity: 70%;
+
+  }
+  
+  .menu.active a {
+	color: #ffffff;
+	opacity: 300%;
+  }
+  
+  .menu ul {
+	opacity: 230%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	height: 5vw;
+  }
+  
+  .menu li {
+	margin: 0;
+	margin-bottom: 2px;
+  }
+  
+
+  .menu-btn {
+	position: fixed;
+	z-index: 3;
+	font-size: 2vw;
+	color: #260b66;
+	background-color: #0000009c;;
+	border: none;
+	cursor: pointer;
+	height: 4vw;
+	width: 4vw;
+	margin-top: 2.5vw;
+	margin-left: 10%;
+	border-radius: 1vw;
+	padding: 0.5vw;
+
+  }
+  
+  
+  .menu-btn .line {
+	width: 100%;
+	height: 0.4vw;
+	background-color: #260b66;
+	margin-bottom: 0.3vw;
+	margin-top: 0.4vw;
+	transition: all 0.3s ease;
+  }
+  
+  .menu-btn:hover .line:nth-child(1),
+  .menu-btn:hover .line:nth-child(3) {
+	width: 100%;
+  }
+  
+  .menu-btn .line:nth-child(1),
+  .menu-btn .line:nth-child(3) {
+	width: 50%;
+  }
+  
+  .menu-btn:hover .line:nth-child(2) {
+	width: 50%;
+  }
+  
+  /* Cambiar botón a x */
+  .menu-btn.active .line:nth-child(1) {
+	transform: rotate(45deg);
+	width: 100%;
+	margin-bottom: -0.9vw;
+	margin-top: 1.5vw;
+  }
+  
+  .menu-btn.active .line:nth-child(2) {
+	transform: rotate(-45deg);
+	width: 100%;
+	margin-top: 0.5vw;
+  }
+  
+  .menu-btn.active .line:nth-child(3) {
+	opacity: 0;
+  }
+/* ... (otros estilos) ... */
+
+.menu-icon {
+    position: absolute;
+    top: 50%; /* Alinea la imagen verticalmente en el centro */
+    right: 1%; /* Ajusta el valor según tu necesidad para posicionar la imagen a la derecha */
+    transform: translateY(-50%); /* Alinea verticalmente la imagen respecto a su altura */
+    width: 100px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: none; /* Oculta la imagen por defecto */
+}
+
+/* Asegura que la imagen se muestre cuando el menú está activo */
+.menu.active .menu-icon {
+    display: block;
+}
+
+
+
+
+body{
+    background-image: url('img/space.gif');
+	transition: all 0.3s ease;
+	background-color:#260b66;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 90%;
+}
+
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:#260b6662;
+    position: fixed; /* Establece la posición fija */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Asegura que cubra completamente el contenido */
+    backdrop-filter: blur(3px); /* Ajusta la cantidad de desenfoque que desees */
+}
+
+.wave1{
+	
+	
+	margin-top: 0;
+	top: 0;
+	margin-bottom: 10px;
+}
+
+.Contenedor{
+	color:white;
+	background-color: #260b66;
+	display: flex;
+	flex-direction: column;
+}
+.Sobre-mi
+{
+	background-color: black;
+	color: white;
+	margin: 0 -7.5px ;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 2% 10%;
+	margin-right: 20%;
+	border-top-right-radius: 50vw;
+	border-bottom-right-radius: 50vw;
+}
+
+.fotografia {
+    height: auto;
+    width: 200px;
+    border-radius: 50vw;
+
+}
+
+.Nombre {
+    color: white;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+}
+
+.text-center {
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+}
+
+.text-right {
+    text-align: right; /* Alinea el texto a la derecha horizontalmente */
+}
+
+.nombre {
+    font-weight: bold; /* Hace que el nombre se vea en negrita */
+    font-size: 1.5em; /* Ajusta el tamaño del nombre según tus preferencias */
+}
+
+.Nombre > div {
+    margin: 0; /* Elimina el margen vertical entre los elementos */
+}
+
+
+.mainFoto {
+    width: 100%;
+    text-align: right; /* Alinea el contenido a la derecha */
+	margin-top: 0px;
+	
+}
+
+  
+
+.Competencias {
+	min-height: 50vw;
+	margin-top: 10%;
+	padding: 0vw;
+	background-color: #260b66;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #ffffff;
+	border-top-right-radius: 10%;
+	border-top-left-radius: 10%;
+  }
+  
+  .tittleCompetencias {
+	font-family: SpaceGrotesk;
+	font-style: bold;
+	font-size: 3vw;
+	text-align: center;
+	color: #ffffff;
+	border-bottom: 1px solid #f0f0f0;
+	width: calc(96% - 4%);
+	padding: 3%;
+  }
+  
+  .subCompetencias {
+	display: flex;
+	flex-direction: row;
+	padding: 1%;
+	align-items: center;
+	padding-top: 10%;
+  }
+  
+  .subCompetencias > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 15px;
+	width: 15%; /* Fijo el ancho de cada cuadro a 25% para igualar el tamaño */
+	height: 15%;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-bottom: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+	border-radius: 10%;
+	padding: 2%;
+	margin-bottom: 3.5%;
+  }
+  
+  .mas {
+	background-color: transparent;
+	color: white;
+	border: transparent;
+	font-size: 30px;
+  }
+  
+  .desplegable {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+	padding: 0;
+	background-color: #260b66;
+	color: white;
+	border-radius: 5px;
+	margin-top: 10px;
+	text-align: left; /* Centra el texto en el div */
+  }
+  
+  /* Ajuste del tamaño del texto dentro del desplegable */
+  .desplegable p {
+	margin: 0;
+  }
+  
+  
+  
+  
+
+footer{
+    background-color:#260b66;
+	padding: 10%;
+	color: white;
+	margin-top: -5px;
+}
+
+
+.Return {
+	display: inline-block; /* Cambiamos el display a "inline-block" para que el enlace tome el tamaño del contenido */
+	padding: 10px 20px; /* Añadimos un espacio interno alrededor del enlace */
+	background-color: white; /* Fondo blanco */
+	border: 1px solid white; /* Borde blanco */
+	color: black; /* Color de texto */
+	text-decoration: none; /* Quitamos la decoración de subrayado */
+	border-radius: 5px; /* Agregamos bordes redondeados */
+  }
+  
+  .Return:hover {
+	background-color: lightgray; /* Cambiamos el fondo al pasar el mouse */
+	color: black; /* Cambiamos el color de texto al pasar el mouse */
+  }
+  
+.FooterOne {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1% 5%;
+	box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+}
+.subf1Tittle,.titleSubs{
+	font-size: 1.5vw;
+	color: white;
+	width: 20vw;
+	margin-right: 50px;
+
+}
+
+.subFooter1 {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0 5%;
+	color: white;
+	width: 40vw;
+	
+	align-items: left;
+	box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+	
+}
+
+.subFooter2 {
+	flex: 1;
+	width: 40vw;
+	display: flex;
+	flex-direction: row;
+	padding: 0 5%;
+	color: white;
+	align-items: left;
+	box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+
+
+}
+
+.sf2Contenido {
+	margin-right: 10%;
+	box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+	margin-top: -10%;
+
+}
+
+.subMenu1 {
+	display: flex; /* Mostrar los elementos en forma de fila (horizontal) */
+	justify-content: center; /* Centrar los elementos horizontalmente */
+	align-items: center; /* Centrar los elementos verticalmente */
+	border-bottom: 1px solid rgb(255, 255, 255);
+	width: 80vw; /* Establecer el ancho al 90% */
+	margin: 0.3% auto; /* Centrar el contenedor horizontalmente */
+	color: white;
+	font-size: 20px;
+  }
+  
+  
+  .menu2 {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	font-size: 1em;
+	
+	
+  }
+  
+  .menu2 li {
+	display: inline-block; /* Mostrar los elementos de la lista en una sola fila */
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	
+  }
+  .op{
+	border-left: 1px solid rgb(255, 255, 255);
+  }
+  .menu2 li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+	font-size: 1em;
+  }
+  
+  .menu2 li:last-child a {
+	margin-right: 0;
+  }
+  
+  .menu2 li a:hover {
+	color: #8DBF78;
+  }
+
+  
+  .footLogo{
+	background-image:url("iconos/logoWhite.png") ;
+	height: 10vw;
+	width: 10vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+  }
+
+  .subMenu2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	
+  }
+.textSub2{
+	width: 60%;
+	margin-left: 5%;
+}
+  .numcon{
+	padding-left: 2%;
+  }
+  .eMail{
+	padding-left: 2%;
+  }
+
+  .icoRedes{
+	width:10%;
+	display: flex;
+	flex-direction: row;
+  }
+
+  .twitch-logo {
+	width: 100px; /* Tamaño inicial de la imagen */
+	height: 100px; /* Tamaño inicial de la imagen */
+	transition: transform 0.2s; /* Agregamos una transición de transformación */
+  }
+  
+  .twitch-logo:hover {
+	transform: scale(1.2); /* Escala la imagen al pasar el mouse (20% más grande) */
+  }
+  
+
+
+  .final{
+	margin-top: -100px;
+	font-size: 10;
+  }
+
+  .BITMARK{
+	color: #8DBF78;
+  }
+
+  @media (max-width:570px){
+
+	.menu {
+		position: fixed;
+		margin-top: 10px;
+		width: 0;
+		/*overflow: hidden;*/
+		background: #260b66;
+		box-shadow: 0 0 10px rgb(0, 0, 0), 0, .3;
+		transition: width 0.5s ease-in-out;
+		border-radius: 15px;
+		height: 10%;
+		font-size: 0;
+		opacity: 90%;
+		z-index: 10;
+		left: 16%; 
+		top: 5%; 
+	}
+	
+	.menu.active {
+		opacity: 90%;
+		width: 70vw;
+		font-size: 1.3vw;
+		color: #fff;
+	}
+	
+	.menu::after {
+		content: "";
+		position: absolute; /* Asegura que la posición sea absoluta */
+		bottom: -0.5vw;
+		right: 7%;
+		transform: translateX(10%);
+		width: 10vw;
+		height: 90%;
+		margin-top: 4vw;
+	}
+	
+	  
+	  .menu a {
+		opacity: 230%;
+		display: block;
+		padding: 1.5vw 5vw;
+		color: #f0f0f0;
+		text-decoration: none;
+		border-right: 0.1vw transparent #974747;
+	   transition: all 0.3s ease
+	  }
+	  
+	  .menu a:last-child {
+		border-right: none;
+	  }
+	  
+	  .menu a:hover {
+		background: #ebddddfd;
+		opacity: 50%;
+		color: #ffffff;
+		height: 5vw;
+		border-radius: 1vw;
+		transition: all 0.5s ease-in-out;
+		
+		
+	  }
+	  
+	  .menu.active a:hover {
+		color: #260b66;
+		opacity: 70%;
+	
+	  }
+	  
+	  .menu.active a {
+		color: #ffffff;
+		opacity: 300%;
+	  }
+	  
+	  .menu ul {
+		opacity: 230%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		height: 5vw;
+	  }
+	  
+	  .menu li {
+		margin: 0;
+		margin-bottom: 2px;
+	  }
+	  
+	
+	  .menu-btn {
+		position: fixed;
+		z-index: 3;
+		font-size: 2vw;
+		color: #260b66;
+		background-color: #0000001f;;
+		border: none;
+		cursor: pointer;
+		height: 4vw;
+		width: 4vw;
+		margin-top: 2.5vw;
+		margin-left: 10%;
+		border-radius: 1vw;
+		padding: 0.5vw;
+	
+	  }
+	  
+	  
+	  .menu-btn .line {
+		width: 100%;
+		height: 0.4vw;
+		background-color: #260b66;
+		margin-bottom: 0.3vw;
+		margin-top: 0.4vw;
+		transition: all 0.3s ease;
+	  }
+	  
+	  .menu-btn:hover .line:nth-child(1),
+	  .menu-btn:hover .line:nth-child(3) {
+		width: 100%;
+	  }
+	  
+	  .menu-btn .line:nth-child(1),
+	  .menu-btn .line:nth-child(3) {
+		width: 50%;
+	  }
+	  
+	  .menu-btn:hover .line:nth-child(2) {
+		width: 50%;
+	  }
+	  
+	  /* Cambiar botón a x */
+	  .menu-btn.active .line:nth-child(1) {
+		transform: rotate(45deg);
+		width: 100%;
+		margin-bottom: -0.9vw;
+		margin-top: 1.5vw;
+	  }
+	  
+	  .menu-btn.active .line:nth-child(2) {
+		transform: rotate(-45deg);
+		width: 100%;
+		margin-top: 0.5vw;
+	  }
+	  
+	  .menu-btn.active .line:nth-child(3) {
+		opacity: 0;
+	  }
+	  /*Text input*/
+	
+	.menu {
+		position: fixed;
+		margin-top: 0vw;
+		width: 0;
+		overflow: hidden;
+		background: #260b66;
+		box-shadow: 0 0 10px rgb(0, 0, 0), 0, .3;
+		transition: width 0.5s ease-in-out;
+		border-radius: 15px;
+		height: 5vw;
+		font-size: 0;
+		opacity: 90%;
+		z-index: 10;
+		left: 16%; 
+		top: 5%; 
+	}
+	
+	.menu.active {
+		opacity: 90%;
+		width: 70vw;
+		font-size: 1.3vw;
+		color: #fff;
+	}
+	
+	.menu::after {
+		content: "";
+		position: absolute; /* Asegura que la posición sea absoluta */
+		bottom: -0.5vw;
+		right: 7%;
+		transform: translateX(10%);
+		width: 10vw;
+		height: 90%;
+		margin-top: 4vw;
+	}
+	
+	  
+	  .menu a {
+		opacity: 230%;
+		display: block;
+		padding: 1.5vw 5vw;
+		color: #f0f0f0;
+		text-decoration: none;
+		border-right: 0.1vw transparent #974747;
+	   transition: all 0.3s ease
+	  }
+	  
+	  .menu a:last-child {
+		border-right: none;
+	  }
+	  
+	  .menu a:hover {
+		background: #ebddddfd;
+		opacity: 50%;
+		color: #ffffff;
+		height: 5vw;
+		border-radius: 1vw;
+		transition: all 0.5s ease-in-out;
+		
+		
+	  }
+	  
+	  .menu.active a:hover {
+		color: #511389;
+		opacity: 70%;
+	
+	  }
+	  
+	  .menu.active a {
+		color: #ffffff;
+		opacity: 300%;
+	  }
+	  
+	  .menu ul {
+		opacity: 230%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		height: 5vw;
+	  }
+	  
+	  .menu li {
+		margin: 0;
+		margin-bottom: 2px;
+	  }
+	  
+	
+	  .menu-btn {
+		position: fixed;
+		z-index: 3;
+		font-size: 2vw;
+		color: #260b66;
+		background-color: #0000009c;;
+		border: none;
+		cursor: pointer;
+		height: 4vw;
+		width: 4vw;
+		margin-top: 2.5vw;
+		margin-left: 10%;
+		border-radius: 1vw;
+		padding: 0.5vw;
+	
+	  }
+	  
+	  
+	  .menu-btn .line {
+		width: 100%;
+		height: 0.4vw;
+		background-color: #260b66;
+		margin-bottom: 0.3vw;
+		margin-top: 0.4vw;
+		transition: all 0.3s ease;
+	  }
+	  
+	  .menu-btn:hover .line:nth-child(1),
+	  .menu-btn:hover .line:nth-child(3) {
+		width: 100%;
+	  }
+	  
+	  .menu-btn .line:nth-child(1),
+	  .menu-btn .line:nth-child(3) {
+		width: 50%;
+	  }
+	  
+	  .menu-btn:hover .line:nth-child(2) {
+		width: 50%;
+	  }
+	  
+	  /* Cambiar botón a x */
+	  .menu-btn.active .line:nth-child(1) {
+		transform: rotate(45deg);
+		width: 100%;
+		margin-bottom: -0.9vw;
+		margin-top: 1.5vw;
+	  }
+	  
+	  .menu-btn.active .line:nth-child(2) {
+		transform: rotate(-45deg);
+		width: 100%;
+		margin-top: 0.5vw;
+	  }
+	  
+	  .menu-btn.active .line:nth-child(3) {
+		opacity: 0;
+	  }
+	/* ... (otros estilos) ... */
+	
+	.menu-icon {
+		position: absolute;
+		top: 50%; /* Alinea la imagen verticalmente en el centro */
+		right: 1%; /* Ajusta el valor según tu necesidad para posicionar la imagen a la derecha */
+		transform: translateY(-50%); /* Alinea verticalmente la imagen respecto a su altura */
+		width: 100px; /* Ajusta el ancho de la imagen */
+		height: auto; /* Mantiene la proporción de la imagen */
+		display: none; /* Oculta la imagen por defecto */
+	}
+	
+	/* Asegura que la imagen se muestre cuando el menú está activo */
+	.menu.active .menu-icon {
+		display: block;
+	}
+	
+	
+
+  }

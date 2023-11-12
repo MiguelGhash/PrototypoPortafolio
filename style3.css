@@ -1,0 +1,169 @@
+body{
+    background-image: url('img/space.gif');
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+    background-attachment: fixed; /* La imagen se mantendrá fija al hacer scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que la pantalla */
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:#260b6662;
+    position: fixed; /* Establece la posición fija */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Asegura que cubra completamente el contenido */
+    backdrop-filter: blur(3px); /* Ajusta la cantidad de desenfoque que desees */
+}
+
+
+.btn-atras{
+    position: fixed;
+	z-index: 2;
+	font-size: 20px;
+	color: #481796;
+	background-color: #dacce28f;;
+	border: none;
+	cursor: pointer;
+	height: 40px;
+	width: 100px;
+	margin-top: -90px;
+	margin-left: 5px;
+	border-radius: 1vw;
+	padding: 0.5vw;
+
+}
+
+.btn-atras:hover{
+    background-color: rgba(43, 43, 128, 0.479);
+    color: beige;
+    transition: 0.5s;
+}
+
+
+.Consultas {
+
+	margin-top: 10%;
+	padding: 0vw;
+	background-color: #260b66;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #ffffff;
+	border-top-right-radius: 10%;
+	border-top-left-radius: 10%;
+  }
+  
+  .tittleConsultas{
+	font-family: SpaceGrotesk;
+	font-style: bold;
+	font-size: 3vw;
+	text-align: center;
+	color: #ffffff;
+	border-bottom: 1px solid #f0f0f0;
+	width: calc(96% - 4%);
+	padding: 3%;
+  }
+  
+  .subConsultas{
+	display: flex;
+	flex-direction: row;
+	padding: 1%;
+	align-items: center;
+	padding-top: 10%;
+  }
+  
+  .subConsultas > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 15px;
+	width: 20%; /* Fijo el ancho de cada cuadro a 25% para igualar el tamaño */
+	height: 15%;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-bottom: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+	border-radius: 10%;
+	padding: 2%;
+	margin-bottom: 3.5%;
+  }
+  
+  .mas {
+	background-color: transparent;
+	color: white;
+	border: transparent;
+	font-size: 30px;
+  }
+  
+  .desplegable {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+	padding: 0;
+	background-color: #260b66;
+	color: white;
+	border-radius: 5px;
+	margin-top: 10px;
+	text-align: left; /* Centra el texto en el div */
+  }
+  
+  /* Ajuste del tamaño del texto dentro del desplegable */
+  .desplegable p {
+	margin: 0;
+  }
+
+  .subConsultas2{
+	display: flex;
+	flex-direction: row;
+	padding: 10%;
+	align-items: center;
+    
+	
+  }
+  
+  .subConsultas2 > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 15px;
+	width: 25%; /* Fijo el ancho de cada cuadro a 25% para igualar el tamaño */
+	height: 15%;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-bottom: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+	border-radius: 10%;
+	padding: 2%;
+	margin-bottom: 3.5%;
+  }
+
+  .desplegable2 {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+	padding: 0;
+	background-color: #260b66;
+	color: white;
+	border-radius: 5px;
+	margin-top: 10px;
+	text-align: left; /* Centra el texto en el div */
+  }
+  
+  /* Ajuste del tamaño del texto dentro del desplegable */
+  .desplegable2 p {
+	margin: 0;
+  }
+  .mas2 {
+	background-color: transparent;
+	color: white;
+	border: transparent;
+	font-size: 30px;
+  }
+  

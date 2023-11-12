@@ -1,0 +1,465 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #000;
+    position: relative;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+main {
+    margin-top: 100px;
+}
+
+footer {
+    height: 30px;
+    position: relative;
+    font-family: Georgia;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    opacity: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu {
+	position: fixed;
+	margin-top: 0vw;
+	width: 0;
+	overflow: hidden;
+	background: #260b66;
+	box-shadow: 0 0 10px rgb(0, 0, 0), 0, .3;
+	transition: width 0.5s ease-in-out;
+	border-radius: 15px;
+	height: 5vw;
+	font-size: 0;
+	opacity: 90%;
+	z-index: 10;
+	left: 16%; 
+	top: 5%; 
+}
+
+.menu.active {
+	opacity: 90%;
+	width: 70vw;
+	font-size: 1.3vw;
+	color: #fff;
+}
+
+.menu::after {
+	content: "";
+	position: absolute; /* Asegura que la posición sea absoluta */
+	bottom: -0.5vw;
+	right: 7%;
+	transform: translateX(10%);
+	width: 10vw;
+	height: 90%;
+	margin-top: 4vw;
+}
+
+  
+  .menu a {
+	opacity: 230%;
+	display: block;
+	padding: 1.5vw 5vw;
+	color: #f0f0f0;
+	text-decoration: none;
+	border-right: 0.1vw transparent #974747;
+   transition: all 0.3s ease
+  }
+  
+  .menu a:last-child {
+	border-right: none;
+  }
+  
+  .menu a:hover {
+	background: #ebddddfd;
+	opacity: 50%;
+	color: #ffffff;
+	height: 5vw;
+	border-radius: 1vw;
+	transition: all 0.5s ease-in-out;
+	
+	
+  }
+  
+  .menu.active a:hover {
+	color: #260b66;
+	opacity: 70%;
+
+  }
+  
+  .menu.active a {
+	color: #ffffff;
+	opacity: 300%;
+  }
+  
+  .menu ul {
+	opacity: 230%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	height: 5vw;
+  }
+  
+  .menu li {
+	margin: 0;
+	margin-bottom: 2px;
+  }
+  
+
+  .menu-btn {
+	position: fixed;
+	z-index: 3;
+	font-size: 2vw;
+	color: #260b66;
+	background-color: #0000001f;;
+	border: none;
+	cursor: pointer;
+	height: 4vw;
+	width: 4vw;
+	
+	margin-left: 10%;
+	border-radius: 1vw;
+	padding: 0.5vw;
+
+  }
+  
+  
+  .menu-btn .line {
+	width: 100%;
+	height: 0.4vw;
+	background-color: #260b66;
+	margin-bottom: 0.3vw;
+	margin-top: 0.4vw;
+	transition: all 0.3s ease;
+  }
+  
+  .menu-btn:hover .line:nth-child(1),
+  .menu-btn:hover .line:nth-child(3) {
+	width: 100%;
+  }
+  
+  .menu-btn .line:nth-child(1),
+  .menu-btn .line:nth-child(3) {
+	width: 50%;
+  }
+  
+  .menu-btn:hover .line:nth-child(2) {
+	width: 50%;
+  }
+  
+  /* Cambiar botón a x */
+  .menu-btn.active .line:nth-child(1) {
+	transform: rotate(45deg);
+	width: 100%;
+	margin-bottom: -0.9vw;
+	margin-top: 1.5vw;
+  }
+  
+  .menu-btn.active .line:nth-child(2) {
+	transform: rotate(-45deg);
+	width: 100%;
+	margin-top: 0.5vw;
+  }
+  
+  .menu-btn.active .line:nth-child(3) {
+	opacity: 0;
+  }
+  /*Text input*/
+
+.menu {
+	position: fixed;
+	margin-top: 100px;
+	width: 0;
+	overflow: hidden;
+	background: #260b66;
+	box-shadow: 0 0 10px rgb(0, 0, 0), 0, .3;
+	transition: width 0.5s ease-in-out;
+	border-radius: 15px;
+	height: 5vw;
+	font-size: 0;
+	opacity: 90%;
+	z-index: 10;
+	left: 16%; 
+	top: 5%; 
+}
+
+.menu.active {
+    margin-top: 100px;
+	opacity: 90%;
+	width: 70vw;
+	font-size: 1.3vw;
+	color: #fff;
+}
+
+.menu::after {
+	content: "";
+	position: absolute; /* Asegura que la posición sea absoluta */
+	bottom: -0.5vw;
+	right: 7%;
+	transform: translateX(10%);
+	width: 10vw;
+	height: 90%;
+	margin-top: 4vw;
+}
+
+  
+  .menu a {
+	opacity: 230%;
+	display: block;
+	padding: 1.5vw 5vw;
+	color: #f0f0f0;
+	text-decoration: none;
+	border-right: 0.1vw transparent #974747;
+   transition: all 0.3s ease
+  }
+  
+  .menu a:last-child {
+	border-right: none;
+  }
+  
+  .menu a:hover {
+	background: #ebddddfd;
+	opacity: 50%;
+	color: #ffffff;
+	height: 5vw;
+	border-radius: 1vw;
+	transition: all 0.5s ease-in-out;
+	
+	
+  }
+  
+  .menu.active a:hover {
+	color: #511389;
+	opacity: 70%;
+
+  }
+  
+  .menu.active a {
+	color: #ffffff;
+	opacity: 300%;
+  }
+  
+  .menu ul {
+	opacity: 230%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	height: 5vw;
+  }
+  
+  .menu li {
+	margin: 0;
+	margin-bottom: 2px;
+  }
+  
+
+  .menu-btn {
+	position: fixed;
+	z-index: 3;
+	font-size: 2vw;
+	color: #260b66;
+	background-color: #0000009c;;
+	border: none;
+	cursor: pointer;
+	height: 4vw;
+	width: 4vw;
+	margin-top: 2.5vw;
+	margin-left: 10%;
+	border-radius: 1vw;
+	padding: 0.5vw;
+
+  }
+  
+  
+  .menu-btn .line {
+	width: 100%;
+	height: 0.4vw;
+	background-color: #260b66;
+	margin-bottom: 0.3vw;
+	margin-top: 0.4vw;
+	transition: all 0.3s ease;
+  }
+  
+  .menu-btn:hover .line:nth-child(1),
+  .menu-btn:hover .line:nth-child(3) {
+	width: 100%;
+  }
+  
+  .menu-btn .line:nth-child(1),
+  .menu-btn .line:nth-child(3) {
+	width: 50%;
+  }
+  
+  .menu-btn:hover .line:nth-child(2) {
+	width: 50%;
+  }
+  
+  /* Cambiar botón a x */
+  .menu-btn.active .line:nth-child(1) {
+	transform: rotate(45deg);
+	width: 100%;
+	margin-bottom: -0.9vw;
+	margin-top: 1.5vw;
+  }
+  
+  .menu-btn.active .line:nth-child(2) {
+	transform: rotate(-45deg);
+	width: 100%;
+	margin-top: 0.5vw;
+  }
+  
+  .menu-btn.active .line:nth-child(3) {
+	opacity: 0;
+  }
+/* ... (otros estilos) ... */
+
+.menu-icon {
+    position: absolute;
+    top: 50%; /* Alinea la imagen verticalmente en el centro */
+    right: 1%; /* Ajusta el valor según tu necesidad para posicionar la imagen a la derecha */
+    transform: translateY(-50%); /* Alinea verticalmente la imagen respecto a su altura */
+    width: 100px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: none; /* Oculta la imagen por defecto */
+}
+
+/* Asegura que la imagen se muestre cuando el menú está activo */
+.menu.active .menu-icon {
+    display: block;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+.gallery {
+    display: flex; /* Para que las imágenes estén en línea horizontal */
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .CurrVit, .EnEspera1, .EnEspera2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    padding: 5%;
+}
+
+.image {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Agrega un brillo alrededor de la imagen */
+}
+
+.image img {
+    width: 300px;
+    height: 200px;
+    border-radius: 2vw;
+    transition: transform 0.3s ease;
+}
+
+.image a {
+    position: relative;
+    z-index: 1; /* Asegura que el enlace esté por delante de los pseudoelementos */
+    
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(19, 9, 9, 0.562);
+    font-size: 18px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.3s;
+    color: white;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 22, 63, 0.692);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s;
+    color: transparent;
+    border-radius: 2vw;
+    pointer-events: none;
+}
+
+
+
+.image:hover img {
+    transform: scale(1.1);
+    z-index: 1;
+    transition: 0.5s;
+    border-radius: 2vw;
+    box-shadow: 0 0 20px rgba(140, 0, 255, 0.65);
+}
+
+.image:hover::before {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.image:hover::after {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.CurrVit .image:hover::before, .CurrVit .image:hover::after {
+    content: "Hoja de vida";
+    font-size: 2em;
+    backdrop-filter: blur(3px);
+    transition: transform 0.3s ease;
+}
+
+.SnackConference .image:hover::before, .EnEspera1 .image:hover::after {
+    content: "Snack conference";
+    font-size: 2em;
+    backdrop-filter: blur(3px);
+    transition: transform 0.3s ease;
+}
+
+.EnEspera2 .image:hover::before, .EnEspera2 .image:hover::after {
+    content: "Imagen 3";
+    font-size: 2em;
+    backdrop-filter: blur(3px);
+    transition: transform 0.3s ease;
+}
